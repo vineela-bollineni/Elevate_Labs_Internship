@@ -2,36 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Expert Site</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h2>Contact Us</h2>
-    <form id="contactForm" novalidate>
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" />
-        <small class="error" id="nameError"></small>
-      </div>
+  <header>
+    <div class="logo">MySite</div>
+    <nav id="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" />
-        <small class="error" id="emailError"></small>
-      </div>
+  <main id="home" class="container">
+    <section class="intro">
+      <h1 class="fade-in">Welcome to My Expert Site</h1>
+      <p>Built with responsive design, animations, and interactivity.</p>
+    </section>
+    <section class="image-section">
+      <img src="https://c0.wallpaperflare.com/preview/697/898/445/cloud-computing-illustration-technology.jpg" alt="Placeholder Image" />
+    </section>
+  </main>
 
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" rows="4"></textarea>
-        <small class="error" id="messageError"></small>
-      </div>
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <p>We offer web development, design, and optimization services.</p>
+  </section>
 
-      <button type="submit">Submit</button>
-      <p class="success" id="successMessage"></p>
-    </form>
-  </div>
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>We're a passionate team creating high-quality websites.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: hello@example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
